@@ -1,14 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavbarMenu from './Components/Navbar'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <title>Resume of:
+          Umar Nasir
+        </title>
+        <h1>Resume of:
+          Umar Nasir</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+           <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -17,9 +22,11 @@ function App() {
           rel="noopener noreferrer"
         >
           Learn React
+          <div><NavbarMenu /></div>
         </a>
       </header>
     </div>
+   
   );
 }
 
