@@ -1,33 +1,27 @@
 import React from 'react';
-import NavbarMenu from './Components/Navbar'
-import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
-function App() {
+import Home from './Home'
+import {Jumbotron} from './Jumbotron'
+import {Portfolio} from './Portfolio'
+import { Layout } from './Layout';
+
+class App extends React.Component{
+  render(){
   return (
-    <div className="App">
+    <React.Fragment>
+      <Jumbotron />
+      <Layout>
+    <Router>
+      <Switch>
+        <Route exact path ="/" component={Home} />
+      </Switch>
+    </Router>
+    </Layout>
 
-      <header className="App-header">
-        <title>Resume of:
-          Umar Nasir
-        </title>
-        <h1>Resume of:
-          Umar Nasir</h1>
-        <p>
-           <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-          <div><NavbarMenu /></div>
-        </a>
-      </header>
-    </div>
-   
+    </React.Fragment>
+
   );
 }
-
+}
 export default App;
