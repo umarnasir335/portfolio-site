@@ -1,31 +1,41 @@
 import React from 'react'
-import { Navbar, Nav, NavDropdown} from 'react-bootstrap'
+import { Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap'
 import styled from 'styled-components'
 
+const Styles = styled.div`
+.navbody{
+  background-color: rgb(34,56,24);
+  top:0;
+  right: 0;
+}
+
+.NavLinks{
+  padding: 0px 5px 0px 5px;
+
+}
+`;
 
 export default class NavbarMenu extends React.Component{
 
 
     render(){
-        return(
-            <div className="NavbarBody">
-                <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Links</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-    <Nav className="mr-auto">
-      <Nav.Link href="#home">Home</Nav.Link>
-      <Nav.Link href="#link">Resume</Nav.Link>
-      <NavDropdown title="Links" id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">LinkedIn</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Github</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Contact Me</NavDropdown.Item>
-      </NavDropdown>
-    </Nav>
 
-  </Navbar.Collapse>
-</Navbar>    
+        return(
+          <Styles>
+          <div className="navbody">
+                	<Navbar bg="light" variant="light" className="navbody">
+					<Navbar.Brand href="#home">Umar's Repositories</Navbar.Brand>
+					<Nav className="NavLinks">
+						<Nav.Link  href="#home">Home </Nav.Link>
+						<Nav.Link href="#resume">Resume</Nav.Link>
+						<Nav.Link href="#links">Links</Nav.Link>
+					</Nav>
+          
+					
+				</Navbar>
             </div>
+            </Styles>
+
         )
     }
 }

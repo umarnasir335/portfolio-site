@@ -15,6 +15,8 @@ class App extends React.Component{
     <Router>
       <Switch>
         <Route exact path ="/" component={Home} />
+        <Route exact path ="/portfolio" component={Portfolio}/>
+        
       </Switch>
     </Router>
     </Layout>

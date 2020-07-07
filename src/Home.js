@@ -1,5 +1,5 @@
 import React from 'react';
-import NavbarMenu from './Components/Navbar/Navbar.js'
+import Navbar from './Components/Navbar/Navbar.js'
 
 import Profile from '../src/pics/0.jpg'
 import styled from 'styled-components'
@@ -11,10 +11,11 @@ const Styles=styled.div`
     left:0;
     width:100%;
     height:100%;
-    background-color: silver;
+    background-color: rgb(28,27,25);
     z-index:-1;
 }
 .image{
+    position: fixed;
     top:0;
     left:0;
     z-index:3;
@@ -36,7 +37,7 @@ const Home = function(){
             </div>
             <title>Umar Nasir</title>
         <h1>Mission Statement</h1>
-          <div><NavbarMenu /></div>
+          <div><Navbar /></div>
         <p>
            Umar Nasir
         </p>
