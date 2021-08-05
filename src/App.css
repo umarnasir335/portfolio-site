@@ -36,6 +36,7 @@
 
 .profImg{
   align-items: center;
+  display: fixed;
   position:relative;
   border-color: rgb(0, 0, 0);
   border-width: thick;

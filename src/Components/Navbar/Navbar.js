@@ -9,8 +9,8 @@ export default class NavbarMenu extends React.Component{
     render(){
         return(
             <div className="NavbarBody">
-                <Navbar bg="light" expand="lg">
-                <Navbar.Brand href="#home">Links</Navbar.Brand>
+                <Navbar bg="dark" expand="md">
+                <Navbar.Brand href="#home">Umar Nasir</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
     <Nav className="mr-auto">

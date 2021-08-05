@@ -4,6 +4,11 @@ import NavbarMenu from './Components/Navbar/Navbar.js'
 import Profile from '../src/pics/0.jpg'
 import styled from 'styled-components'
 
+import Link from 'next/link';
+ /* import {AiFillGithub, AiFillInstagram, AiFillLinkedIn} from 'react-icons/ai';
+import {DiCssdeck} from 'react-icons/ai'; */
+
+
 const Styles=styled.div`
 .background{
     position: absolute;
@@ -15,11 +20,11 @@ const Styles=styled.div`
     z-index:-1;
 }
 .image{
-    top:0;
-    left:0;
+    top:2em;
+    left: 2em;
     z-index:3;
-    position:fixed;
-    margin: 22px 0px 0px 15px;
+    position: fixed;
+    margin: 0px 0px 0px 0px;
     border: 3 px solid black;
     
 }
@@ -32,21 +37,21 @@ const Home = function(){
         <div className="background"></div>
         <header>
             <div className="image">
-            <img src={Profile} alt='Profile'></img>
+              <img src={Profile} alt='Profile'></img>
             </div>
-            <title>Umar Nasir</title>
-        <h1>Mission Statement</h1>
-          <div><NavbarMenu /></div>
-        <p>
-           Umar Nasir
-        </p>
-        <a
+        <NavbarMenu />
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+        <h1> React.js || SQL || C++ || Firebase</h1>
+            </div>
+        <div>  
+          <a style={{display: 'flex', justifyContent: 'center'}}
           href="https://github.com/umarnasir335"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          >
           Github Link
-        </a>
+          </a>
+          </div>
         </header>
     </React.Fragment>
     </Styles>
